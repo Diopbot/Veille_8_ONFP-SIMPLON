@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>formulaire </title>
+    <link rel="stylesheet" type="text/css" href="formulaire.css">
+</head>
+<body>
+    <h1>Formulaire HTML</h1>
+        
+        <form action="formulaire2.php" method="post">
+            <div class="c100">
+                <label for="prenom">Prénom : </label>
+                <input type="text" id="prenom" name="prenom">
+            </div>
+            <div class="c100">
+                <label for="mail">Email : </label>
+                <input type="email" id="mail" name="mail">
+            </div>
+            <div class="c100">
+                <label for="age">Age : </label>
+                <input type="number" id="age" name="age">
+            </div>
+            <div class="c100">
+                <input type="radio" id="femme" name="sexe" value="femme">
+                <label for="femme">Femme</label>
+                <input type="radio" id="homme" name="sexe" value="homme">
+                <label for="homme">Homme</label>
+                <input type="radio" id="autre" name="sexe" value="autre">
+                <label for="autre">Autre</label>
+            </div>
+            <div class="c100">
+                <label for="ville">ville de résidence :</label>
+                <select id="ville" name="ville">
+                    <optgroup label="France">
+                        <option value="Paris">Paris</option>
+                        <option value="Lion">Lion</option>
+                        <option value="Ile de Paris">Ile de Paris</option>
+                    </optgroup>
+                    <optgroup label="Senegal">
+                        <option value="Dakar">Dakar</option>
+                        <option value="Thies">Thies</option>
+                        <option value="Fatick">Fatick</option>
+                        <option value="Diourbel">Diourbel</option>
+                        <option value="Touba">Touba</option>
+                        <option value="Kaolack">Kaolack</option>
+                    </optgroup>
+                    <optgroup label="Canada">
+                        <option value="montreal">montreal</option>
+                    </optgroup>
+                </select>
+            </div>
+            <div class="c100" id="submit">
+                <input type="submit" value="Envoyer">
+            </div>
+        </form>
+
+</body>
+</html>
