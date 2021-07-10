@@ -1,10 +1,10 @@
 <?php
-    class Utilisateur{
+    class Utilisateur1 {
+        use Inventaire;
         protected $user_name;
         protected $user_region;
         protected $prix_abo;
         protected $user_pass;
-        protected $nombre;
         public const ABONNEMENT = 15;
         
         public function __construct($n, $p, $r, $nb){
@@ -19,12 +19,6 @@
         
         public function getNom(){
             echo $this->user_name;
-        }
- 
-        public function plusUn(){
-            $this->nombre++;
-            echo $this->nombre. '<br>';
-            return $this;
         }
         
         //D'autres méthodes...
